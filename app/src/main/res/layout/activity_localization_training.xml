@@ -87,7 +87,7 @@
         <Button
             android:id="@+id/btn_english"
             android:text="@string/english"
-            android:background="@android:drawable/button_onoff_indicator_on"
+            android:background="@android:drawable/button_onoff_indicator_off"
             style="@style/ButtonLanguage"/>
 
         <Button

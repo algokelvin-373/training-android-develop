@@ -15,4 +15,5 @@
     <string name="indonesian">Indonesia</string>
     <string name="english">Inggris</string>
     <string name="japanese">Jepang</string>
+    <string name="changeLanguage">Berubah ke %s</string>
 </resources>

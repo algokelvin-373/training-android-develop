@@ -14,4 +14,5 @@
     <string name="indonesian">Indonesian</string>
     <string name="english">english</string>
     <string name="japanese">japanese</string>
+    <string name="changeLanguage">Change to %s</string>
 </resources>
