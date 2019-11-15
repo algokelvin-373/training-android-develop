@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':appsamplelocalization'
 rootProject.name='training-android-kotlin-develop'

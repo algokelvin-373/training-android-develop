@@ -8,14 +8,14 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kelvin.algorithm.training_android_kotlin_develop.R
-import kotlinx.android.synthetic.main.activity_localization_other.*
+import kotlinx.android.synthetic.main.activity_localization_training.*
 
-class LocalizationOtherActivity : AppCompatActivity() {
+@Suppress("DEPRECATION")
+class LocalizationAppOne : AppCompatActivity() {
     private lateinit var buttonOnNow: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_localization_other)
-
+        setContentView(R.layout.activity_localization_training)
         setDefaultLang()
 
         when(LanguageUtil.getLang(this)) {
@@ -34,12 +34,11 @@ class LocalizationOtherActivity : AppCompatActivity() {
         btn_english.setOnClickListener { changeLanguage(LANG.EN, getString(R.string.english)) }
         btn_japanese.setOnClickListener { changeLanguage(LANG.JA, getString(R.string.japanese)) }
 
-        btn_page_plants.setOnClickListener {
-            startActivity(Intent(this, LocalizationSimpleCase::class.java))
+        btn_page_animal.setOnClickListener {
+            startActivity(Intent(this, kelvin.algorithm.appsamplelocalization.LocalizationAppTwo::class.java))
             finish()
         }
     }
-
     private fun changeLanguage(lang: String, language: String) {
         setLanguage(lang)
         finish()
