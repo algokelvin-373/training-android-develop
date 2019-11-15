@@ -11,5 +11,7 @@
     <string name="apple">Apple</string>
     <string name="pineapple">Pineapple</string>
     <string name="banana">Banana</string>
-    <string name="change_language">Change Language</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="english">english</string>
+    <string name="japanese">japanese</string>
 </resources>
