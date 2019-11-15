@@ -2,6 +2,7 @@ package kelvin.algorithm.training_android_kotlin_develop.localization.simple_cas
 
 import android.content.Context
 import android.os.Build
+import androidx.fragment.app.FragmentActivity
 import java.util.*
 
 object LanguageUtil {
@@ -10,6 +11,12 @@ object LanguageUtil {
         val editor = pref.edit()
         editor.putString("lang", lang)
         editor.apply()
+    }
+
+    fun getLang(context: Context): String {
+        val pref = context.getSharedPreferences("save_language", Context.MODE_PRIVATE)
+        val lang = pref.getString("lang", LANG.EN) ?: LANG.EN
+        return lang
     }
 }
 
@@ -27,4 +34,9 @@ fun Context.setLanguage(lang: String) {
     }
     LanguageUtil.savePref(this, lang)
     resources.updateConfiguration(conf, dm)
+}
+
+fun FragmentActivity.setDefaultLang() {
+    val lang = LanguageUtil.getLang(this)
+    setLanguage(lang)
 }
