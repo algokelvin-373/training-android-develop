@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name='training-android-kotlin-develop'
