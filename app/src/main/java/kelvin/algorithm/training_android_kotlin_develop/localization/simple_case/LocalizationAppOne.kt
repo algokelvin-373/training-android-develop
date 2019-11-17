@@ -35,8 +35,10 @@ class LocalizationAppOne : AppCompatActivity() {
         btn_japanese.setOnClickListener { changeLanguage(LANG.JA, getString(R.string.japanese)) }
 
         btn_page_animal.setOnClickListener {
-            startActivity(Intent(this, kelvin.algorithm.appsamplelocalization.LocalizationAppTwo::class.java))
-            finish()
+            val intent = Intent("kelvin.algorithm.appsamplelocalization")
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK;
+            intent.putExtra("data",LanguageUtil.getLang(this));
+            startActivity(intent)
         }
     }
     private fun changeLanguage(lang: String, language: String) {

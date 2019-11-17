@@ -11,7 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name="kelvin.algorithm.appsamplelocalization.LocalizationAppTwo"/>
         <activity android:name=".localization.simple_case.LocalizationAppOne">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
