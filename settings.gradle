@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':app-google-map-mapbox'
 rootProject.name='training-android-kotlin-develop'
