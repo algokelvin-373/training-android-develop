@@ -11,11 +11,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var x = 0
         val handler = Handler()
         val runnable = object: Runnable {
             override fun run() {
-                Log.i("android-runnable", "Runnable is work")
-                handler.postDelayed(this, 250)
+                Log.i("android-runnable", "Runnable is work, x = $x")
+                if (++x == 5) {
+                    Log.i("android-runnable", "Runnable has been stopped")
+                    handler.removeCallbacks(this)
+                }
+                else {
+                    handler.postDelayed(this, 1000)
+                }
             }
         }
         Log.i("android-runnable", "Runnable start")
