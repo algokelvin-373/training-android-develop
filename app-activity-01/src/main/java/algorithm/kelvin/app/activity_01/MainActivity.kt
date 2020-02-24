@@ -1,24 +1,29 @@
 package algorithm.kelvin.app.activity_01
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+    private var value = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        btnNext.setOnClickListener { startActivity(Intent(this, MainTwoActivity::class.java)) }
     }
 
     override fun onStart() {
         super.onStart()
-        Log.i("activity-one", "Start is run")
+        Log.i("activity-one", "Start is run, value = $value")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.i("activity-one", "Resume is run")
+        value = 1
+        Log.i("activity-one", "Resume is run, value = $value")
     }
 
     override fun onPause() {
@@ -38,6 +43,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onRestart() {
         super.onRestart()
-        Log.i("activity-one", "Restart is run")
+        if (value == 1) Log.i("activity-one", "Restart is run with value 1, value = $value")
+        else Log.i("activity-one", "Restart is run with value 0, value = $value")
     }
 }
