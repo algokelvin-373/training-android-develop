@@ -15,26 +15,26 @@ class OneFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.i("fragment-view", "ViewCreated is start")
+        Log.i("fragment-view", "ViewCreated 1 is start")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.i("fragment-resume", "Resume is start")
+        Log.i("fragment-resume", "Resume 1 is start")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.i("fragment-start", "Start is start")
+        Log.i("fragment-start", "Start 1 is start")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.i("fragment-stop", "Stop is start")
+        Log.i("fragment-stop", "Stop 1 is start")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.i("fragment-destroy", "Destroy is start")
+        Log.i("fragment-destroy", "Destroy 1 is start")
     }
 }

@@ -15,22 +15,22 @@ class TwoFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        Log.i("fragment-resume", "Resume is start")
+        Log.i("fragment-resume", "Resume 2 is start")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.i("fragment-start", "Start is start")
+        Log.i("fragment-start", "Start 2 is start")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.i("fragment-stop", "Stop is start")
+        Log.i("fragment-stop", "Stop 2 is start")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.i("fragment-destroy", "Destroy is start")
+        Log.i("fragment-destroy", "Destroy 2 is start")
     }
 
 }
