@@ -28,4 +28,35 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
         valueFragment = 1
     }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("fragment-activity-one", "Start is run")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("fragment-activity-one", "Resume is run")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i("fragment-activity-one", "Pause is run")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("fragment-activity-one", "Stop is run")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("fragment-activity-one", "Destroy is run")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.i("fragment-activity-one", "Restart is run")
+    }
+
 }
