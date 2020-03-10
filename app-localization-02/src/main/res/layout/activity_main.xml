@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".localization.simple_case.LocalizationSimpleCase">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
@@ -80,20 +79,7 @@
 
         <Button
             android:id="@+id/btn_indonesian"
-            android:background="@android:drawable/button_onoff_indicator_off"
-            android:text="@string/indonesian"
-            style="@style/ButtonLanguage"/>
-
-        <Button
-            android:id="@+id/btn_english"
-            android:text="@string/english"
-            android:background="@android:drawable/button_onoff_indicator_on"
-            style="@style/ButtonLanguage"/>
-
-        <Button
-            android:id="@+id/btn_japanese"
-            android:text="@string/japanese"
-            android:background="@android:drawable/button_onoff_indicator_off"
+            android:text="@string/change_language"
             style="@style/ButtonLanguage"/>
 
     </LinearLayout>
