@@ -1,2 +1,8 @@
-include ':app', ':appsamplelocalization'
+include ':app',
+        ':app-activity-01',
+        ':app-fragment-01',
+        ':app-google-map-mapbox',
+        ':app-notification-02',
+        ':app-runnable-02',
+        ':app-work-manager-01'
 rootProject.name='training-android-kotlin-develop'
