@@ -4,5 +4,10 @@ include ':app',
         ':app-google-map-mapbox',
         ':app-notification-02',
         ':app-runnable-02',
-        ':app-work-manager-01'
+        ':app-work-manager-01',
+        ':app-localization-01',
+        ':app-localization-02',
+        ':app-localization-03',
+        ':app-localization-04',
+        ':appsamplelocalization'
 rootProject.name='training-android-kotlin-develop'
