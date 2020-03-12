@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="color_orange_FF6700">#FF6700</color>
     <color name="color_grey_C4C4C4">#C4C4C4</color>
+    <color name="color_grey_DDDDDD">#DDDDDD</color>
 </resources>
