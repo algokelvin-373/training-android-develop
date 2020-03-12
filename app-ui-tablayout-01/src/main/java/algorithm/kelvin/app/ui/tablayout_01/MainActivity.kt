@@ -20,5 +20,9 @@ class MainActivity : AppCompatActivity() {
             override fun onTabUnselected(p0: TabLayout.Tab?) { }
             override fun onTabSelected(p0: TabLayout.Tab?) { layoutViewPager.setCurrentItem(p0?.position!!, true) }
         })
+
+        btnToFragmentTwo.setOnClickListener {
+            layoutViewPager.setCurrentItem(2, true)
+        }
     }
 }

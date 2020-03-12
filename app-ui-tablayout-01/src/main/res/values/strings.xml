@@ -8,4 +8,5 @@
     <string name="fragment_1">Fragment 1</string>
     <string name="fragment_3">Fragment 3</string>
     <string name="fragment_2">Fragment 2</string>
+    <string name="to_fragment_two">To Fragment Two</string>
 </resources>

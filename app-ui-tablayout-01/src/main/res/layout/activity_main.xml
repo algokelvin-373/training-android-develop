@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/layout_button_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_orange_FF6700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:text="@string/to_fragment_two"
+            android:id="@+id/btnToFragmentTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
     <FrameLayout
         android:id="@+id/pageLayout"
         android:layout_width="match_parent"
@@ -15,7 +33,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tabsLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/layout_button_fragment">
 
         <algorithm.kelvin.app.ui.tablayout_01.AlgoViewPager
             android:id="@+id/layoutViewPager"
