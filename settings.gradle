@@ -9,5 +9,6 @@ include ':app',
         ':app-localization-02',
         ':app-localization-03',
         ':app-localization-04',
+        ':app-project-example-case-01'
         ':appsamplelocalization'
 rootProject.name='training-android-kotlin-develop'

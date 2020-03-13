@@ -36,7 +36,7 @@
             app:layout_constraintTop_toTopOf="@+id/buttonOne" />
 
         <Button
-            android:id="@+id/buttonThree"
+            android:id="@+id/buttonPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -54,9 +54,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:text="="
-            app:layout_constraintBottom_toBottomOf="@+id/buttonThree"
-            app:layout_constraintStart_toEndOf="@+id/buttonThree"
-            app:layout_constraintTop_toTopOf="@+id/buttonThree" />
+            app:layout_constraintBottom_toBottomOf="@+id/buttonPlus"
+            app:layout_constraintStart_toEndOf="@+id/buttonPlus"
+            app:layout_constraintTop_toTopOf="@+id/buttonPlus" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
