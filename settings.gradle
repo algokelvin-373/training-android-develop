@@ -1,4 +1,4 @@
-include ':app',
+include ':app', ':stackoverflow-app-case',
         ':app-activity-01',
         ':app-fragment-01',
         ':app-google-map-mapbox',
