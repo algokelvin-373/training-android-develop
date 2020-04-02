@@ -15,6 +15,8 @@ include ':app',
         ':app-project-example-case-04',
         ':app-project-example-case-05',
         ':app-projects-practice-movie-01',
+        ':app-ui-dynamic-layout-view-01',
+        ':app-ui-dynamic-layout-view-02',
         ':appsamplelocalization',
         ':lib-app-projects-practice-movie'
 rootProject.name='training-android-kotlin-develop'
