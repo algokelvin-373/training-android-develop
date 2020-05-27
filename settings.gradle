@@ -1,6 +1,8 @@
 include ':app',
         ':stackoverflow-app-case',
         ':app-service-01',
+        ':app-dark-mode',
+        ':app-dagger-basic',
         ':app-intent-contact',
         ':app-firebase-basic',
         ':app-copy-paste-basic',
