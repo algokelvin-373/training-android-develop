@@ -1,4 +1,4 @@
-package com.algokelvin.app.dagger.basic
+package com.algokelvin.app.dark.mode
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
