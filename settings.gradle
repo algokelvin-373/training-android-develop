@@ -19,5 +19,6 @@ include ':app',
         ':app-ui-dynamic-layout-view-01',
         ':app-ui-dynamic-layout-view-02',
         ':appsamplelocalization',
+        ':app-dagger-basic',
         ':lib-app-projects-practice-movie'
 rootProject.name='training-android-kotlin-develop'
