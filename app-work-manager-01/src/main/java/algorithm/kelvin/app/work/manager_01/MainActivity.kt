@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
             .setConstraints(constraints)
             .build()
         WorkManager.getInstance().enqueue(periodicWorkRequest)
-        WorkManager.getInstance().getWorkInfoByIdLiveData(periodicWorkRequest.id).observe(this@MainActivity,
-            Observer<WorkInfo> { workInfo ->
-                val status = workInfo.state.name
-                Log.i("WorkManager", status)
-            })
+//        WorkManager.getInstance().getWorkInfoByIdLiveData(periodicWorkRequest.id).observe(this@MainActivity,
+//            Observer<WorkInfo> { workInfo ->
+//                val status = workInfo.state.name
+//                Log.i("WorkManager", status)
+//            })
     }
 }
