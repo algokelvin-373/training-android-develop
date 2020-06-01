@@ -1,6 +1,6 @@
 package algorithm.kelvin.app.projects.practice.movie_01
 
-import algorithm.kelvin.lib.app.projects.practice.movie.MainPageAdapter
+//import algorithm.kelvin.lib.app.projects.practice.movie.MainPageAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayout
@@ -12,14 +12,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val mainPageAdapter = MainPageAdapter(supportFragmentManager)
-        mainPageAdapter.addPageMenu(MovieFragment(), TVFragment())
-        main_viewpager.adapter = mainPageAdapter
-        tab_layout_main.setupWithViewPager(main_viewpager)
-
-        tab_layout_main.getTabAt(0)?.setText(R.string.movie)
-        tab_layout_main.getTabAt(1)?.setText(R.string.tv_show)
-        tabMovieCatalogOnClick(tab_layout_main)
+//        val mainPageAdapter = MainPageAdapter(supportFragmentManager)
+//        mainPageAdapter.addPageMenu(MovieFragment(), TVFragment())
+//        main_viewpager.adapter = mainPageAdapter
+//        tab_layout_main.setupWithViewPager(main_viewpager)
+//
+//        tab_layout_main.getTabAt(0)?.setText(R.string.movie)
+//        tab_layout_main.getTabAt(1)?.setText(R.string.tv_show)
+//        tabMovieCatalogOnClick(tab_layout_main)
     }
 
     private fun tabMovieCatalogOnClick(tabLayout: TabLayout) {
