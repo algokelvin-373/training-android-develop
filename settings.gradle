@@ -21,5 +21,8 @@ include ':app',
         ':app-ui-dynamic-layout-view-02',
         ':appsamplelocalization',
         ':app-dagger-basic',
+        ':app-take-image-from-camera',
+        ':app-take-image-from-devices',
+        ':app-rare-and-share',
         ':lib-app-projects-practice-movie'
 rootProject.name='training-android-kotlin-develop'
