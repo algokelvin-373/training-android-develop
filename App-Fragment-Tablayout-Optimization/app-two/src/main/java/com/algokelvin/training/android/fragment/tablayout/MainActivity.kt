@@ -9,7 +9,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        supportFragmentManager.findFragmentByTag(PageFragment::class.java.simpleName)
+        fragmentTransaction.add(R.id.fragmentSample, PageFragment(), PageFragment::class.java.simpleName)
+        fragmentTransaction.commit()
 
     }
 }
