@@ -6,11 +6,27 @@
     android:background="@android:color/holo_orange_light"
     tools:context=".FragmentTwo">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_gravity="center"
-        android:text="@string/fragment_two" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/fragment_two"/>
+
+        <TextView
+            android:id="@+id/textFragmentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="@string/text_fragment_two"/>
+
+    </LinearLayout>
 
 </FrameLayout>

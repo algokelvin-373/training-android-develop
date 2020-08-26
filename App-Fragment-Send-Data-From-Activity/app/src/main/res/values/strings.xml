@@ -5,4 +5,6 @@
     <string name="input_data">Input data</string>
     <string name="fragment_one">Fragment One</string>
     <string name="fragment_two">Fragment Two</string>
+    <string name="text_fragment_one">Text Fragment One : %s</string>
+    <string name="text_fragment_two">Text Fragment Two : %s</string>
 </resources>
